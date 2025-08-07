@@ -25,7 +25,10 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-4!@47%%ywj2_*u
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'  # Default to True if not set
 
 # Add your domain names or Render's URLs here for deployment
-ALLOWED_HOSTS = os.environ.get('DJANGO_ALLOWED_HOSTS', 'localhost 127.0.0.1').split()
+
+
+ALLOWED_HOSTS = os.environ.get('DJANGO_ALLOWED_HOSTS', 'localhost 127.0.0.1 day84pro1.onrender.com').split()
+
 
 # Application definition
 
@@ -126,3 +129,4 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # Default primary key field type
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
